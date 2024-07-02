@@ -3,7 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardBackgroundColor="@color/cardview_shadow_start_color">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,72 +17,76 @@
             android:id="@+id/ivAvatar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="24dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/user_6_svgrepo_com" />
 
         <TextView
             android:id="@+id/tvAuthor"
-            android:layout_width="2000dp"
-            android:layout_height="300dp"
-            android:layout_marginStart="176dp"
-            android:text="author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/pearl_cheshari"
+            android:textSize="22sp"
+            android:visibility="visible"
             app:layout_constraintStart_toEndOf="@+id/ivAvatar"
-            app:layout_constraintTop_toTopOf="@+id/ivAvatar" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
 
         <TextView
             android:id="@+id/tvArticleTitle"
-            android:layout_width="2000dp"
-            android:layout_height="300dp"
-            android:layout_marginStart="176dp"
-            android:layout_marginTop="48dp"
-            android:text="title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/day_in_the_life"
+            android:textSize="22sp"
             app:layout_constraintStart_toEndOf="@+id/ivAvatar"
             app:layout_constraintTop_toBottomOf="@+id/tvAuthor" />
 
         <TextView
             android:id="@+id/tvDate"
-            android:layout_width="2000dp"
-            android:layout_height="300dp"
-            android:layout_marginStart="176dp"
-            android:layout_marginTop="48dp"
-            android:text="date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/_02_07_2024"
+            android:textSize="22sp"
             app:layout_constraintStart_toEndOf="@+id/ivAvatar"
             app:layout_constraintTop_toBottomOf="@+id/tvArticleTitle" />
 
-        <ImageView
-            android:id="@+id/ivArticle"
+        <TextView
+            android:id="@+id/tvLink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="400dp"
-            app:layout_constraintEnd_toStartOf="@+id/tvDate"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ivAvatar"
-            app:srcCompat="@drawable/article_svgrepo_com" />
+            android:layout_marginBottom="6388dp"
+            android:text="@string/read_more2"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="132dp" />
 
         <TextView
             android:id="@+id/tvArticlesPreview"
-            android:layout_width="2000dp"
-            android:layout_height="800dp"
-            android:layout_marginStart="560dp"
-            android:layout_marginTop="224dp"
-            android:layout_marginEnd="320dp"
-            android:text="preview"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/ivArticle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/hello_this_is_a_preview_on_thje_article_click_on_the_link_to_learn_more"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvDate" />
 
-        <TextView
-            android:id="@+id/tvLink"
-            android:layout_width="1000dp"
-            android:layout_height="300dp"
-            android:layout_marginBottom="2700dp"
-            android:text="link"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:layout_marginEnd="52dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvArticlesPreview"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivAvatar"
+            app:srcCompat="@drawable/article_svgrepo_com" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

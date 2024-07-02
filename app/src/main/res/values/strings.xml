@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Blog Reader</string>
+    <string name="house_rules">House Rules</string>
+    <string name="_2_07_2024">2-07-2024</string>
+    <string name="this_is_a_preview_to_help_you_learn_more_about_the_article">This is a preview to help you learn more about the article.</string>
+    <string name="read_more">Read More</string>
+    <string name="jodi_picoult">Jodi Picoult</string>
+    <string name="pearl_cheshari">Pearl Cheshari</string>
+    <string name="day_in_the_life">Day In The Life</string>
+    <string name="_02_07_2024">02-07-2024</string>
+    <string name="read_more2">Read More</string>
+    <string name="hello_this_is_a_preview_on_thje_article_click_on_the_link_to_learn_more">Hello, this is a preview on thje article. Click on the link to learn more.</string>
 </resources>
