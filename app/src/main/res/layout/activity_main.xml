@@ -9,11 +9,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvArticles"
-        android:layout_width="309dp"
-        android:layout_height="729dp"
+        android:layout_width="416dp"
+        android:layout_height="735dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
